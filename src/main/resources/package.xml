@@ -1,7 +1,15 @@
 <package type="addon" name="digital-signature" version="@VERSION@">
   <title>Digital Signature</title>
   <description>
-	<p>The Digital Signature add-on provides digital signing capabilities for PDF documents. The signing process includes the generation of password-protected certificates that are stored within user profiles and can be reused for signing multiple documents. During the signing process the user can view a listing of all user certificates associated with a given document directly from within Nuxeo DM without having to open the file in a PDF reader. Finally, the signature can also be verified in a PDF viewer using a downloadable local root certificate, which is also provided by this plugin.</p>
+    <p>The Digital Signature add-on provides digital signing capabilities for
+      PDF documents. The signing process includes the generation of
+      password-protected certificates that are stored within user profiles and
+      can be reused for signing multiple documents. During the signing process
+      the user can view a listing of all user certificates associated with a
+      given document directly from within Nuxeo DM without having to open the
+      file in a PDF reader. Finally, the signature can also be verified in a PDF
+      viewer using a downloadable local root certificate, which is also provided
+      by this plugin.</p>
   </description>
   <home-page>http://doc.nuxeo.com/x/CANu</home-page>
   <vendor>Nuxeo</vendor>
@@ -14,11 +22,8 @@
   <production-state>testing</production-state>
   <supported>false</supported>
   <platforms>
-    <platform>cap-5.5</platform>
+    <platform>cap-5.6</platform>
   </platforms>
-  <dependencies>
-    <package>nuxeo-content-browser:1.0.0:1.0.0</package>
-  </dependencies>
   <license>LGPL</license>
   <license-url>http://www.gnu.org/licenses/lgpl.html</license-url>
 </package>
