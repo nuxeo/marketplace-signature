@@ -21,7 +21,8 @@
     <copy todir="${maven.project.build.directory}/marketplace/install/bundles">
       <artifact:resolveFile key="org.nuxeo.ecm.platform:nuxeo-platform-signature-api::jar" />
       <artifact:resolveFile key="org.nuxeo.ecm.platform:nuxeo-platform-signature-core::jar" />
-      <artifact:resolveFile key="org.nuxeo.ecm.platform:nuxeo-platform-signature-web:5.6-SNAPSHOT:jar" />
+      <artifact:resolveFile key="org.nuxeo.ecm.platform:nuxeo-platform-signature-web::jar" />
+      <artifact:resolveFile key="org.nuxeo.ecm.platform:nuxeo-platform-signature-config::jar" />
     </copy>
 
     <zip destfile="${maven.project.build.directory}/${maven.project.artifactId}-${maven.project.version}.zip"
