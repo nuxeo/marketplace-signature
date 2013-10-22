@@ -8,8 +8,8 @@
   </parent>
 
   <artifactId>selenium</artifactId>
-  <name>Sample functional tests with Selenium</name>
-  <description>Sample functional tests with Selenium</description>
+  <name>Signature functional tests with Selenium</name>
+  <description>Signature functional tests with Selenium</description>
   <packaging>pom</packaging>
 
   <build>

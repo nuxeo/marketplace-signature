@@ -10,7 +10,7 @@
 
   <artifactId>marketplace</artifactId>
   <packaging>zip</packaging>
-  <name>Marketplace package - recommended build method</name>
+  <name>Marketplace package - Digital Signature</name>
 
   <dependencies>
     <!-- Base distribution(s) for the MP -->

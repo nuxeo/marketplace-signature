@@ -25,7 +25,7 @@
     <profile>
       <id>ftest</id>
       <modules>
-        <module>ftest/webdriver</module>
+        <module>ftest/selenium</module>
       </modules>
     </profile>
   </profiles>
@@ -35,7 +35,7 @@
       <dependency>
         <groupId>org.nuxeo.marketplace.signature</groupId>
         <artifactId>marketplace</artifactId>
-        <version>${marketplace.sample.version}</version>
+        <version>${marketplace.signature.version}</version>
         <type>zip</type>
       </dependency>
     </dependencies>
