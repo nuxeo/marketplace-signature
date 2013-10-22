@@ -1,29 +1,73 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.nuxeo.ecm.distribution</groupId>
     <artifactId>nuxeo-distribution</artifactId>
-    <version>5.7-SNAPSHOT</version>
-    <relativePath>../pom.xml</relativePath>
+    <version>5.8-SNAPSHOT</version>
   </parent>
 
-  <artifactId>nuxeo-platform-signature</artifactId>
-  <packaging>zip</packaging>
-  <version>1.2.0-SNAPSHOT</version>
+  <groupId>org.nuxeo.marketplace.signature</groupId>
+  <artifactId>parent</artifactId>
+  <packaging>pom</packaging>
+  <version>2.0-SNAPSHOT</version>
   <name>Marketplace package of Digital Signature</name>
 
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.nuxeo.build</groupId>
-        <artifactId>nuxeo-distribution-tools</artifactId>
-        <configuration>
-          <buildFiles>
-            <buildFile>${basedir}/src/main/assemble/assembly.xml</buildFile>
-          </buildFiles>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
+  <properties>
+    <marketplace.signature.version>2.0-SNAPSHOT</marketplace.signature.version>
+  </properties>
+
+  <modules>
+    <module>marketplace</module>
+  </modules>
+
+  <profiles>
+    <profile>
+      <id>ftest</id>
+      <modules>
+        <module>ftest/webdriver</module>
+      </modules>
+    </profile>
+  </profiles>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.nuxeo.marketplace.signature</groupId>
+        <artifactId>marketplace</artifactId>
+        <version>${marketplace.sample.version}</version>
+        <type>zip</type>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <repositories>
+    <repository>
+      <id>public</id>
+      <url>http://maven.nuxeo.org/nexus/content/groups/public</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>public-snapshot</id>
+      <url>http://maven.nuxeo.org/nexus/content/groups/public-snapshot</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <updatePolicy>always</updatePolicy>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+
+  <scm>
+    <connection>scm:git:git://github.com/nuxeo/marketplace-signature.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com:nuxeo/marketplace-signature.git</developerConnection>
+    <url>https://github.com/nuxeo/marketplace-signature</url>
+  </scm>
 </project>

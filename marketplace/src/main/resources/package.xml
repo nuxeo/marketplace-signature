@@ -22,7 +22,7 @@
   <production-state>testing</production-state>
   <supported>false</supported>
   <platforms>
-    <platform>cap-5.6</platform>
+    <platform>cap-5.8-SNAPSHOT</platform>
   </platforms>
   <license>LGPL</license>
   <license-url>http://www.gnu.org/licenses/lgpl.html</license-url>
