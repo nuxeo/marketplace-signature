@@ -18,16 +18,8 @@
 
   <modules>
     <module>marketplace</module>
+    <module>ftest/selenium</module>
   </modules>
-
-  <profiles>
-    <profile>
-      <id>ftest</id>
-      <modules>
-        <module>ftest/selenium</module>
-      </modules>
-    </profile>
-  </profiles>
 
   <dependencyManagement>
     <dependencies>
