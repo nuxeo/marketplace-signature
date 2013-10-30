@@ -1,4 +1,4 @@
-<package type="addon" name="digital-signature" version="@VERSION@">
+<package type="addon" name="nuxeo-signature" version="@VERSION@">
   <title>Digital Signature</title>
   <description>
     <p>The Digital Signature add-on provides digital signing capabilities for
