@@ -43,11 +43,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>500</td>
-	<td></td>
-</tr>
-<tr>
 	<td>verifyTextPresent</td>
 	<td>Default domain</td>
 	<td></td>
@@ -69,12 +64,17 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>link=Import a file</td>
+	<td>link=New</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForTextPresent</td>
-	<td>Create a new file</td>
+	<td>waitForElementPresent</td>
+	<td>link=File</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=File</td>
 	<td></td>
 </tr>
 <tr>
@@ -94,17 +94,22 @@
 </tr>
 <tr>
 	<td>type</td>
+	<td>id=document_create:nxl_heading:nxw_title</td>
+	<td>original</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=document_create:nxl_file:nxw_file:nxw_file_file:choiceupload</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
 	<td>//input[@type='file']</td>
 	<td>${filepath}</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>clickAndWait</td>
-	<td>//input[@value='Upload']</td>
+	<td>//input[@value='Create']</td>
 	<td></td>
 </tr>
 <tr>
