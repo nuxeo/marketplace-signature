@@ -11,7 +11,7 @@
       viewer using a downloadable local root certificate, which is also provided
       by this plugin.</p>
   </description>
-  <home-page>http://doc.nuxeo.com/x/CANu</home-page>
+  <home-page>http://doc.nuxeo.com/x/N4IPAQ</home-page>
   <vendor>Nuxeo</vendor>
   <installer restart="true" />
   <uninstaller restart="true" />
