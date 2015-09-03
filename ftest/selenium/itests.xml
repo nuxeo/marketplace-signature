@@ -14,7 +14,7 @@
   <property name="mp.install" value="file:${out.dir}/marketplace-${marketplace.signature.version}.zip" />
   <target name="prepare-environment" depends="_init,prepare-db,prepare-tomcat,prepare-jboss">
     <copy todir="${out.dir}">
-      <artifact:resolveFile key="org.nuxeo.marketplace.signature:marketplace::zip" />
+      <artifact:file key="org.nuxeo.marketplace.signature:marketplace::zip" />
     </copy>
   </target>
 

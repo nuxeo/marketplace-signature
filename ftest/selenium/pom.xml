@@ -13,6 +13,22 @@
   <description>Signature functional tests with Selenium</description>
   <packaging>pom</packaging>
 
+  <dependencies>
+    <dependency>
+      <groupId>org.nuxeo.marketplace.signature</groupId>
+      <artifactId>marketplace</artifactId>
+      <type>zip</type>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.nuxeo.ecm.distribution</groupId>
+      <artifactId>nuxeo-distribution-tomcat</artifactId>
+      <classifier>nuxeo-cap</classifier>
+      <type>zip</type>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
   <build>
     <plugins>
       <plugin>
