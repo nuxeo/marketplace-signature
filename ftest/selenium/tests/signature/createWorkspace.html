@@ -73,7 +73,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>link=Manage</td>
+	<td>link=Permissions</td>
 	<td></td>
 </tr>
 <tr>
@@ -81,15 +81,30 @@
 	<td>10000</td>
 	<td></td>
 </tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>New Permission</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//paper-button[text()='New Permission']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Add a Permission</td>
+	<td></td>
+</tr>
 <!-- Since 5.7.3 rights is a select2 widget-->
 <tr>
 	<td>select2Type</td>
-	<td>css=div[id$='nxw_selection_select2']</td>
+	<td>css=div[id$='s2id_select2']</td>
 	<td>Members</td>
 </tr>
 <tr>
 	<td>waitForSelect2</td>
-	<td>10000</td>
+	<td>30000</td>
 	<td></td>
 </tr>
 <tr>
@@ -98,23 +113,18 @@
 	<td></td>
 </tr>
 <tr>
-	<td>watchA4jRequests</td>
-	<td></td>
-	<td></td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>//*[@id=&quot;add_rights_form:rights_permission_select&quot;]</td>
-	<td>label=Edit</td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>id=add_rights_form:rights_add_button</td>
+	<td>click</td>
+	<td>//h2[text()='Add a Permission']/..//paper-item[text()='Edit']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
-	<td>//input[@value='Save Local Rights']</td>
+	<td>click</td>
+	<td>//h2[text()='Add a Permission']/..//paper-button[text()='Create']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>Add a Permission</td>
 	<td></td>
 </tr>
 <tr>
