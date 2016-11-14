@@ -29,19 +29,12 @@
     <!-- Additional bundles to be deployed by the package -->
     <dependency>
       <groupId>org.nuxeo.ecm.platform</groupId>
-      <artifactId>nuxeo-platform-signature-api</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.nuxeo.ecm.platform</groupId>
-      <artifactId>nuxeo-platform-signature-core</artifactId>
+      <artifactId>nuxeo-platform-signature-core-dependencies</artifactId>
+      <type>pom</type>
     </dependency>
     <dependency>
       <groupId>org.nuxeo.ecm.platform</groupId>
       <artifactId>nuxeo-platform-signature-web</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.nuxeo.ecm.platform</groupId>
-      <artifactId>nuxeo-platform-signature-config</artifactId>
     </dependency>
   </dependencies>
 
