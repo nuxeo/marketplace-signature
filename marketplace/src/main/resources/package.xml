@@ -1,15 +1,7 @@
 <package type="addon" name="nuxeo-signature" version="@VERSION@">
   <title>Digital Signature</title>
   <description>
-    <p>The Digital Signature add-on provides digital signing capabilities for
-      PDF documents. The signing process includes the generation of
-      password-protected certificates that are stored within user profiles and
-      can be reused for signing multiple documents. During the signing process
-      the user can view a listing of all user certificates associated with a
-      given document directly from within Nuxeo DM without having to open the
-      file in a PDF reader. Finally, the signature can also be verified in a PDF
-      viewer using a downloadable local root certificate, which is also provided
-      by this plugin.</p>
+    <p>The Digital Signature addon introduces PDF signing capabilities to the Nuxeo Platform following asymmetric cryptography, PKI & the X.509 standards. This addon also provides generation of user certificates stored server-side, which are required for document signing.</p>
   </description>
   <home-page>http://doc.nuxeo.com/x/N4IPAQ</home-page>
   <vendor>Nuxeo</vendor>
