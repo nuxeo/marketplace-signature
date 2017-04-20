@@ -3,7 +3,7 @@
   <description>
     <p>The Digital Signature addon introduces PDF signing capabilities to the Nuxeo Platform following asymmetric cryptography, PKI and the X.509 standards. This addon also provides generation of user certificates stored server-side, which are required for document signing.</p>
   </description>
-  <home-page>http://doc.nuxeo.com/x/N4IPAQ</home-page>
+  <home-page>https://doc.nuxeo.com/nxdoc/digital-signature/</home-page>
   <vendor>Nuxeo</vendor>
   <installer restart="true" />
   <uninstaller restart="true" />
