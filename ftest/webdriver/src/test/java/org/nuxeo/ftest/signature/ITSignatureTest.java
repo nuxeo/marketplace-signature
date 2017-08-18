@@ -61,7 +61,7 @@ public class ITSignatureTest extends AbstractTest {
     @Before
     public void before() {
         RestHelper.createUser(TEST_USERNAME, ALT_TEST_PASSWORD, "John", "Doe", "Nuxeo", "jdoe@localhost", "members");
-        wsId = RestHelper.createDocument(WORKSPACES_PATH, WORKSPACE_TYPE, TEST_WORKSPACE_TITLE, null);
+        wsId = RestHelper.createDocument(WORKSPACES_PATH, WORKSPACE_TYPE, TEST_WORKSPACE_TITLE);
         RestHelper.addPermission(wsId, TEST_USERNAME, SecurityConstants.WRITE);
     }
 
